@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly; /* separa los elementos */
+    align-items: center; /* los alinea verticalmente */
+}
+
+.h1 {
+    color: black;
+    text-align: center; /* centra el texto dentro del h1 */
+    padding-top: 50px; 
+}
+
+.logo {
+    position: relative;
+    margin-top: -65px;
+    margin-left: 50px;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106, 173, 240));
+    position: sticky;
+    top: 0;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: rgb(96, 160, 212);
+    padding: 10px 0;
+    position: sticky;
+    top: o;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly; /* distribuye en todo el ancho */
+    width: 100%;
+}
+
+/* Botones del menú */
+nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    background-color: rgb(96, 160, 212);
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent; /* borde invisible por defecto */
+    border-radius: 0; /* botones normales (sin redondeo) */
+}
+
+/* Hover: borde negro */
+nav ul li a:hover {
+    border: 2px solid black;
+    background-color: #198ddf;
+}
+
+/* Submenú desplegable */
+nav ul li {
+    position: relative;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0f94e7;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:hover > ul.submenu {
+    display: block;
+}
+
+ul.submenu a {
+    padding: 10px 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+ul.submenu a:hover {
+    background-color: #28c4c4;
+    border: 2px solid black;
+}
+
+main {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106, 173, 240));
+}
+/* ==========================
+   BANNER CONTACTO
+========================== */
+
+.banner-contacto{
+    height: 50vh;
+    background-image: url("../img/banner_contacto.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-contacto-contenido{
+    background: rgba(0,0,0,.55);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner-contacto-contenido h2{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.banner-contacto-contenido p{
+    color: white;
+}
+
+.titulo_contacto {
+    color: #03173d;
+    text-align: center;
+}
+
+/* ==========================
+   CONTACTO
+========================== */
+
+.contacto{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.formulario-contacto,
+.datos-contacto{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.formulario-contacto h2,
+.datos-contacto h2{
+    color: #0A2A66;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label{
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contacto button{
+    margin-top: 20px;
+    padding: 15px;
+    background: #0A2A66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover{
+    background: #163d86;
+}
+
+.dato{
+    margin-bottom: 25px;
+}
+
+.dato h3{
+    color: #0A2A66;
+    margin-bottom: 8px;
+}
+.botones-formulario{
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.botones-formulario button{
+
+    flex: 1;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.botones-formulario button[type="submit"]{
+
+    background: #0A2A66;
+
+    color: white;
+}
+
+.botones-formulario button[type="submit"]:hover{
+
+    background: #002260;
+}
+
+.botones-formulario button[type="reset"]{
+
+    background: #dc3545;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.botones-formulario button[type="reset"]:active{
+
+    background: #5b040d;
+}
+
+#nombre:focus {
+    background-color: #7dc2ff;
+
+}
+
+#nombre:focus-visible {
+    outline: 3px solid rgb(97, 255, 6);
+}
+/* ==========================
+   GOOGLE MAPS
+========================== */
+
+.mapa{
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.mapa h2{
+    color: #0A2A66;
+    margin-bottom: 20px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ==========================
+   REDES SOCIALES
+========================== */
+
+.redes{
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.redes h2{
+    color: #0A2A66;
+    margin-bottom: 30px;
+}
+
+.redes-contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.redes-contenedor a{
+    background: #0A2A66;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.redes-contenedor a:hover{
+    background: #163d86;
+}
+
+/* ====================================
+   FOOTER
+==================================== */
+
+.footer{
+
+    background-color: #03173d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.footer-contenido h2{
+
+    margin-bottom: 15px;
+}
+
+.footer-contenido p{
+
+    margin: 5px 0;
+}
+
+.redes-sociales{
+
+    margin: 25px 0;
+}
+
+.redes-sociales a{
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+}
+
+.redes-sociales a:hover{
+    color: #F4B400;
+}
+
+.copyright{
+
+    margin-top: 20px;
+
+    font-size: .9rem;
+
+    color: #ccc;
+}
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .contacto{
+        grid-template-columns: 1fr;
+    }
+
+    .redes-contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-contacto-contenido h2{
+        font-size: 2rem;
+    }
+
+}

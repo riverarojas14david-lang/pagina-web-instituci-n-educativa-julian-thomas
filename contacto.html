@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilo_contacto.css">
+</head>
+<body>
+    <header>
+        
+    <div class="header">
+        <h1 class="h1">INSTITUCION EDUCATIVA JULIAN THOMAS</h1>
+        <img src="img/logo.png" class="logo" width="100" alt="logo"> 
+       
+
+    </div>
+    
+
+    <nav>
+        <ul class="menu">
+
+            <li><a href="index.html">Inicio</a></li>
+
+            <li class="submenu">
+                <a href="nosotros.html">Nosotros &#9662;</a>
+                <ul class="submenu">
+                    <li><a href="nosotros.html#historia">Historia</a></li>
+                    <li><a href="nosotros.html#mision">Misión</a></li>
+                    <li><a href="nosotros.html#vision">Visión</a></li>
+                    <li><a href="nosotros.html#perfilinstitucional">Perfil Institucional</a></li>
+                    <li><a href="nosotros.html#instalaciones">Instalaciónes</a></li>
+                    
+                </ul>
+            </li>
+
+            <li class="submenu">
+                <a href="programa-academico.html">Programa Academico &#9662;</a>
+                <ul class="submenu">
+                    <li><a href="programa-academico.html#preescolar">Preescolar</a></li>
+                    <li><a href="programa-academico.html#primaria">Primaria</a></li>
+                    <li><a href="programa-academico.html#bachillerato">Bachillerato</a></li>
+                </ul>
+            </li>
+
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+
+    </nav>
+
+    </header>
+    <main>
+
+        <section class="banner-contacto">
+
+            <div class="banner-contenido">
+              <h2>.</h2>
+            </div>
+        </section>
+        <br>
+
+        <section class="titulo_contacto">
+            <h2><b>CONTACTO</b></h2>
+        </section>
+
+        
+
+        <section class="contacto">
+
+            <div class="formulario-contacto">
+
+               <h2>Formulario de Contacto</h2>
+
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3">
+
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required minlength="3">
+
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="3001234567" pattern="[0-9]{10}" required>
+
+                    <label for="programa">Programa</label>
+
+                    <select id="programa" name="programa" required>
+
+                        <option value="">Seleccione una opción</option>
+
+                        <option>Preescolar</option>
+                        <option>Primaria</option>
+                        <option>Bachillerato</option>
+
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje..." required></textarea>
+
+                    <div class="botones-formulario">
+
+                      <button type="submit">
+                          Enviar Mensaje
+                      </button>
+  
+                      <button type="reset">
+                         Limpiar Formulario
+                      </button>
+
+                    </div>
+                </form>
+            </div>
+                   
+
+            <div class="datos-contacto">
+
+               <h2>Información Institucional</h2>
+
+                <div class="dato">
+                   <h3>Dirección</h3>
+                   <p>Carrera 15 #24-60, Tunja, Boyacá</p>
+                </div>
+
+                <div class="dato">
+                   <h3>Teléfono</h3>
+                   <p>+57 310 456 7890</p>
+                </div>
+
+                <div class="dato">
+                   <h3>Correo</h3>
+                   <p>contacto@iejulianthomas.edu.co</p>
+                </div>
+
+                <div class="dato">
+                   <h3>Horario</h3>
+                   <p>Lunes a Viernes</p>
+                   <p>6:00 AM - 4:00 PM</p>
+                </div>
+
+            </div>
+  
+        </section>
+
+        <!-- MAPA -->
+
+        <section class="mapa">
+
+          <h2>Ubicación</h2>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7437653735797!2d-73.44055112524127!3d5.604817194376059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a78ed87ccae1f%3A0xd815fb33a3066e3a!2sPolideportivo%20Pita%20Y%20Chone!5e0!3m2!1ses-419!2sco!4v1781732591619!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+       <!-- REDES -->
+
+        <section class="redes">
+
+          <h2>Síguenos en Redes Sociales</h2>
+
+            <div class="redes-contenedor">
+
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+              <a href="#">TikTok</a>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <h2>Institución Educativa Julian Thomas</h2>
+            <p>Carrera 15 # 24-60, Tunja, Boyacá, Colombia</p>
+            <p>Teléfono: +57 310 456 7890</p>
+            <p>Correo: contacto@iejulianthomas.edu.co</p>
+        </div>
+
+        <div class="redes-sociales">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">YouTube</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Institución Educativa Julian Thomas. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
