@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto | Institución Educativa Julian Thomas</title>
     <link rel="stylesheet" href="css/estilo_contacto.css">
 </head>
 <body>
@@ -75,19 +75,13 @@
                <h2>Formulario de Contacto</h2>
 
                 <form>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3">
+                   <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3" autocomplete="given-name">
 
-                    <label for="apellido">Apellidos</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required minlength="3">
+                   <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required minlength="3" autocomplete="family-name">
 
-                    <label for="correo">Correo Electrónico</label>
-                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                   <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required autocomplete="email">
 
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="3001234567" pattern="[0-9]{10}" required>
-
-                    <label for="programa">Programa</label>
+                   <input type="tel" id="telefono" name="telefono" placeholder="3001234567" pattern="[0-9]{10}" required autocomplete="tel">
 
                     <select id="programa" name="programa" required>
 
