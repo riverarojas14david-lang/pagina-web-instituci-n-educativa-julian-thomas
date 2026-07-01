@@ -255,3 +255,37 @@ tr:nth-child(even){
     }
 
 }
+.actividades{
+    padding:40px 20px;
+    background:#f4f4f4;
+    text-align:center;
+}
+
+.actividades h2{
+    margin-bottom:30px;
+}
+
+.actividades-contenedor{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.actividad{
+    width:280px;
+    padding:20px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+.actividad h3{
+    color:#0b4f8a;
+    margin-bottom:10px;
+}
+
+.actividad p{
+    line-height:1.6;
+}
