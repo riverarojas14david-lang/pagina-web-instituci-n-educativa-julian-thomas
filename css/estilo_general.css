@@ -386,3 +386,29 @@ ul.submenu a:hover {
     }
 
 }
+.valores{
+    padding:40px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.valores-contenedor{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.valor{
+    width:250px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    background:white;
+}
+
+.valor h3{
+    color:#0b4f8a;
+    margin-bottom:10px;
+}
